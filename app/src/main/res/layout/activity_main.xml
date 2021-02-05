@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="159dp"
+        android:layout_height="43dp"
+        android:hint="f name"
+        app:layout_constraintEnd_toEndOf="@id/buttonId"
+        app:layout_constraintStart_toStartOf="@id/buttonId"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <Button
+        android:id="@+id/buttonId"
+        android:layout_width="177dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewId"
+        android:onClick="onBtnClick"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="206dp"
+        android:layout_height="88dp"
+        android:ems="10"
+        android:hint="f n"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/buttonId"
+        app:layout_constraintStart_toStartOf="@id/buttonId"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@id/buttonId"
+        app:layout_constraintStart_toStartOf="@id/buttonId"
+        tools:layout_editor_absoluteY="191dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/buttonId" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="203dp"
+        android:layout_height="34dp"
+        android:hint="email"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
